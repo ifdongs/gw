@@ -1360,7 +1360,7 @@ namespace Drawing {
                             break;
                     }
                     canvas->drawTextBlob(SkTextBlob::MakeFromText(ref, 1, fonts.overlay, SkTextEncoding::kUTF8),
-                                         i + v, yp, faceColor);
+                                         i + v, yp+fonts.fontSize, faceColor);
                     i += xScaling;
                     ++ref;
                 }
